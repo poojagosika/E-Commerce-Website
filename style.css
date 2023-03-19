@@ -1,0 +1,196 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.top-nav
+{
+    display: flex;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1)0%, 
+        rgba(252,11,13,0.11817226890756305) 100%);
+    box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.26);
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.contents-top
+{
+    /* text-align: center; */
+    display: flex;
+    /* align-items: center; */
+    margin: auto;
+    /* margin: auto; */
+    width: 100%;
+    padding: 15px 62px;
+}
+
+.nav-bar-contents
+{
+    display: flex;
+    /* text-align: center;
+    align-items: center; */
+    float: left;
+    margin: auto;
+}
+
+.nav-bar-h1
+{
+    /* opacity: 0.2; */
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: left;
+    /* align-items: center;
+    text-align: center; */
+    /* margin:10px 200px; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    /* line-height: 60px; */
+    color: #4A99D3;
+    float: left;
+    cursor: pointer;
+}
+
+
+.nav-bar-contents-info
+{
+    display: flex;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
+    padding: 10px;
+    width: 50%;
+}
+
+.register-login
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px;
+    cursor: pointer;
+}
+
+.sell
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px;
+    cursor: pointer;
+}
+.register-login > i, .sell>i
+{
+    padding-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.register-login >p , .sell >p
+{
+    cursor: pointer;
+    padding-right: 10px;
+    display: flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #0F001A;
+}
+
+
+
+.banner
+{
+    background-color: white;
+    padding: 0px 50px;
+    width: auto;
+    height: auto;
+    
+}
+
+.banner-top
+{
+    width: 100%;
+    margin: auto;
+    background-color: #EAF6FF;
+}
+.banner-contents
+{
+    display: flex;
+    background-color: #EAF6FF;
+    width: 50%;
+    margin: auto;
+    padding: 60px 15px 31px 15px;
+    
+}
+
+.banner-contents > p
+{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+}
+
+.banner-button
+{
+    display: inline-flex;
+    border: 2px solid #FC0B0D;
+    border-radius: 20px;
+    background-color: #EAF6FF;
+    width: 400px;
+    height: 70px;
+    margin: auto;
+}
+
+input
+{
+    
+    margin: auto;
+    outline: none;
+    border: none;
+    width: 300px;
+    height: 60px;
+    background-color: #EAF6FF;
+    cursor: pointer;
+}
+
+input::placeholder
+{
+    color: #004B84;
+}
+
+.Search-More
+{
+    margin: auto;
+}
+.sliders
+{
+    margin: auto;
+    padding-right: 20px;
+}
+
+
+
+.banner-image
+{
+    display: flex;
+    margin-bottom: -100px;
+    float: right;
+    padding: 0px 150px;
+}
+.imgs
+{
+    align-items: center;
+}
