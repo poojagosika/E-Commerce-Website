@@ -4,7 +4,7 @@
     margin: 0px;
 }
 
-.top-nav
+nav
 {
     display: flex;
     background: rgb(255,255,255);
@@ -12,46 +12,22 @@
         rgba(252,11,13,0.11817226890756305) 100%);
     box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.26);
     position: relative;
-    width: 100%;
     z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
-
-.contents-top
+nav > h1
 {
-    /* text-align: center; */
-    display: flex;
-    /* align-items: center; */
-    margin: auto;
-    /* margin: auto; */
-    width: 100%;
-    padding: 15px 62px;
-}
-
-.nav-bar-contents
-{
-    display: flex;
-    /* text-align: center;
-    align-items: center; */
-    float: left;
-    margin: auto;
-}
-
-.nav-bar-h1
-{
-    /* opacity: 0.2; */
-    font-family: 'Poppins';
-    display: flex;
-    justify-content: left;
-    /* align-items: center;
-    text-align: center; */
-    /* margin:10px 200px; */
+    display: block;
+    padding: 30px 0px;
+    text-align: center;
+    width: 50%;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
-    /* line-height: 60px; */
     color: #4A99D3;
-    float: left;
     cursor: pointer;
 }
 
@@ -59,83 +35,71 @@
 .nav-bar-contents-info
 {
     display: flex;
-    text-align:center;
     align-items: center;
-    justify-content: center;
-    /* justify-content: space-between; */
-    padding: 10px;
     width: 50%;
+    justify-content: space-around;
 }
 
-.register-login
+.register-sell
 {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 0px 30px;
     cursor: pointer;
 }
 
-.sell
+.register-sell > i
 {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 30px;
-    cursor: pointer;
-}
-.register-login > i, .sell>i
-{
-    padding-right: 10px;
+    padding: 20px;
     cursor: pointer;
     font-size: 20px;
 }
-.register-login >p , .sell >p
+.register-sell >p
 {
     cursor: pointer;
-    padding-right: 10px;
-    display: flex;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
     color: #0F001A;
 }
 
-
+@media only screen and (max-width: 600px)
+{
+    nav
+    {
+        display: block;
+    }
+    .nav-bar-contents-info
+    {
+        width: 100%;
+        padding: 30px 0px;
+    }
+    nav>h1
+    {
+        width: 100%;
+    }
+}
 
 .banner
 {
-    padding: 0px 50px;
-    width: auto;
-    height: auto;
-    
+    padding: 0px 70px 100px 70px;
 }
 
 .banner-top
 {
     display: flex;
-    width: 100%;
-    margin: auto;
+    padding: 96px 0px;
+    justify-content: space-around;
     background-color: #EAF6FF;
 }
 .banner-contents
 {
-    background-color: #EAF6FF;
-    width: 50%;
-    padding: 100px 15px;
-    
+
 }
 
-.buy-sell
+.banner-contents p
 {
-    display:flex;
-    justify-content: center;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 33px;
     line-height: 40px;
@@ -146,24 +110,30 @@
 
 .banner-button
 {
+    padding: 8px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: 2px solid #FC0B0D;
     border-radius: 20px;
     background-color: #EAF6FF;
-    width: 400px;
-    height: 70px;
-    margin: auto;
+    /* width: 400px;
+    height: 70px; */
 }
 
-input
+.Search-More
 {
-    margin: auto;
+    display: block;
+    width: 66px;
+    height: 30px;
+}
+
+.banner-button input
+{
+    
     outline: none;
     border: none;
-    width: 300px;
-    height: 60px;
     background-color: #EAF6FF;
-    cursor: pointer;
 }
 
 input::placeholder
@@ -171,51 +141,56 @@ input::placeholder
     color: #004B84;
 }
 
-.Search-More
-{
-    padding: 18px 0px;
-    margin: auto;
-}
 .sliders
 {
-
-    margin: auto;
-    padding-right: 20px;
+    width: 35px;
+    height: 32px;
 }
-
-
-
-.banner-image
+.banner-top > img
 {
-    justify-content: center;
-    width: 50%;
-    display: flex;
-}
-.imgs
-{
-    margin-top: 70px;
+    position: relative;
+    margin-bottom: -170px;
+    display: block;
     width: 436px;
     height: 382px;
-    position: absolute;
-    display: flex;
-    align-items: center;
+    z-index: 1;
 }
+
+@media only screen and (max-width: 992px)
+{
+    .banner-top > img
+    {
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px)
+{
+    .banner
+    {
+        padding: 0px 0px 100px 00px;
+    }
+}
+
+
+
 
 .cards
 {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
+    padding: 0px 23px;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .card
 {
-    /* position: absolute; */
-    width: 50%;
+    width: 45%;
     display: flex;
-    margin: 100px 50px;
     padding: 30px;
-    background: #FAFAFA;
+    margin: 24px;
+    background: #fafafa;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
@@ -223,7 +198,7 @@ input::placeholder
 
 .card-details
 {
-    width: 50%;
+    width: 45%;
     display: block;
     /* text-align: center; */
 
@@ -267,20 +242,56 @@ input::placeholder
     font-size: 16px;
 }
 
+
+
+@media only screen and (max-width: 1200px)
+{
+    .cards
+    {
+        display: block;
+    }
+    .card
+    {
+        width: 80%;
+        /* padding: 24px 0px 24px 24px; */
+
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .card
+    {
+        display: block;
+        padding: 10px 20px;
+    }
+    .card-details
+    {
+        width: 100%;
+    }
+    .card img 
+    {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
 .product
 {
     /* padding: 10px 50px; */
-    display: inline-block;
+    display: flex;
     /* padding: 10px 50px; */
-    margin: 20px 20px 20px 35px;
-    justify-content: center;
+    padding: 20px 60px;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 .product-card
 {
-    justify-content: space-evenly;
-    display: inline-block;
+    margin: 40px 10px;
     width: 320px;
     height: 370px;
     background: #FFFFFF;
@@ -401,7 +412,7 @@ input::placeholder
 
 footer{
     display: flex;
-    background: #EAF6FF;
+    background-color: #EAF6FF;
     width: 100%;
     padding: 30px 0px;
 }
@@ -411,7 +422,7 @@ footer{
     display: flex;
     width: 50%;
     display: block;
-    margin: 60px 71px;
+    margin: 0px 13px;
 }
 
 .h2-contents
@@ -426,7 +437,7 @@ footer{
     color: #000000;
 }
 .cont-p{
-    padding: 30px;
+    padding: 20px 30px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -438,14 +449,15 @@ footer{
 
 .ft-cont
 {
-    margin: 60px 71px;
-    padding: 57px;
+    padding: 47px 37px 65px;
     display: flex;
     width: 50%;
 }
 .contents1
 {
     width: 50%;
+    display:block;
+    justify-content: space-between;
 }
 
 
@@ -466,11 +478,16 @@ h3
     display: flex;
     padding: 10px 10px 10px 0px;
 }
-img
+/* img
 {
     padding-right: 12px;
+} */
+
+.details > img
+{
+    padding-right: 10px;
 }
-p
+.contents > p
 {
     display: flex;
     font-family: 'Montserrat';
@@ -482,4 +499,94 @@ p
 .details1 p{
     padding: 10px 10px 10px 0px;
 }
+
+/* @media only screen and (max-width: 850px)
+{
+    footer
+    {
+        display: block;
+    }
+    .contents
+    {
+    }
+    .ft-cont
+    {
+        padding-right: 0px;
+    }
+} */
+
+@media only screen and (max-width: 768px)
+{
+    footer
+    {
+        display: block;
+    }
+    .contents
+    {
+        width: 100%;
+    }
+    .ft-cont
+    {
+        width: 100%;
+        padding-right: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 600px)
+{
+    footer
+    {
+        display: block;
+        width:100%;
+    }
+    .contents
+    {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 425px)
+{
+    footer
+    {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: block;
+    }
+    h3
+    {
+        margin: auto;
+    }
+    .contents
+    {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .ft-cont
+    {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: inline;
+    }
+    .contents1
+    {
+        display: inline-block;
+        justify-content: center;
+        /* align-items: center;
+        text-align: center; */
+    }
+    .contents2
+    {
+        padding: 20px;
+        justify-content: center;
+    }
+
+}
+
+
 
