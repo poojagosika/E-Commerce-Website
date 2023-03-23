@@ -63,6 +63,11 @@ nav > h1
     line-height: 27px;
     color: #0F001A;
 }
+.register-sell > p> a
+{
+    text-decoration: none;
+    color: #000000;
+}
 
 @media only screen and (max-width: 600px)
 {
@@ -93,10 +98,10 @@ nav > h1
     justify-content: space-around;
     background-color: #EAF6FF;
 }
-.banner-contents
+/* .banner-contents
 {
 
-}
+} */
 
 .banner-contents p
 {
@@ -523,11 +528,11 @@ h3
     }
     .contents
     {
-        width: 100%;
+        width: 80%;
     }
     .ft-cont
     {
-        width: 100%;
+        width: 80%;
         padding-right: 0px;
     }
 }
